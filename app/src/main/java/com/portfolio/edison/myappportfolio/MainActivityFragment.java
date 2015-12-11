@@ -25,8 +25,8 @@ public class MainActivityFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
         FragmentActivity context = getActivity();
-        int colorPrimaryLight = ContextCompat.getColor(context, R.color.colorPrimaryLight); // Using ContextCompat to be able to retrieve color in older than M versions
-        int colorAccent = ContextCompat.getColor(context, R.color.colorAccent);
+        int colorPrimaryLight = ContextCompat.getColor(context, R.color.colorPrimaryLight); // Using ContextCompat to be able to retrieve color in older than M versions http://stackoverflow.com/questions/31842983/getresources-getcolor-is-deprecated
+        int colorAccent = ContextCompat.getColor(context, R.color.colorAccent); // As suggested at http://stackoverflow.com/questions/31842983/getresources-getcolor-is-deprecated
         int colorWhite = ContextCompat.getColor(context, R.color.colorWhite);
         int colorBlack = ContextCompat.getColor(context, R.color.colorBlack);
 
@@ -87,7 +87,7 @@ public class MainActivityFragment extends Fragment {
         });
     }
 
-    private void displayToast(CharSequence text) {
+    private void displayToast(CharSequence text) {// as in http://developer.android.com/guide/topics/ui/notifiers/toasts.html
         Context context = getActivity();
         int duration = Toast.LENGTH_SHORT;
 

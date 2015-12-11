@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,11 +7,64 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.portfolio.edison.myappportfolio.MainActivityFragment"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    android:background="#F6F6F6">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Nanodegree Apps!"
+        android:id="@+id/textViewTitle"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="26dp" />
 
-</RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp">
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="SPOTIFY STREAMER"
+            android:id="@+id/buttonSpotifyStreamer"
+            android:layout_marginTop="47dp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="SCORES APP"
+            android:id="@+id/buttonScoresApp"
+            android:backgroundTintMode="src_over" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="LIBRARY APP"
+            android:id="@+id/buttonLibraryApp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="BUILD IT BIGGER"
+            android:id="@+id/buttonBuildItBigger" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="XYZ READER"
+            android:id="@+id/buttonXYZReader" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="CAPSTONE: MY OWN APP"
+            android:id="@+id/buttonCapstoneMyapp" />
+    </LinearLayout>
+
+</LinearLayout>

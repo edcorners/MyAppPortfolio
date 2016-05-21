@@ -9,4 +9,6 @@ This android app serves as a menu for my projects created for my Android Develop
 
 ## Usage
 
-Clone this repository on your machine, open the code on Android Studio 1.5 and run.
+Clone this repository on your machine, open the code on Android Studio.
+Upgrade gradle configuration if necessary.
+Run.

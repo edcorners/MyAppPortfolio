@@ -12,3 +12,7 @@ This android app serves as a menu for my projects created for my Android Develop
 Clone this repository on your machine, open the code on Android Studio.
 Upgrade gradle configuration if necessary.
 Run.
+
+Gradle Installation
+
+* Run ``gradlew app:installDebug`` with an android device connected on debug mode.

@@ -13,6 +13,6 @@ Clone this repository on your machine, open the code on Android Studio.
 Upgrade gradle configuration if necessary.
 Run.
 
-Gradle Installation
+### Gradle Installation
 
-* Run ``gradlew app:installDebug`` with an android device connected on debug mode.
+Run ``gradlew app:installDebug`` with an android device connected on debug mode.
